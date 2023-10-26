@@ -1,0 +1,23 @@
+@import "./css/main.css";
+
+:root {
+  color-scheme: light dark;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+}
+
+#app {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+}
