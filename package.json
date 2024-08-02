@@ -1,0 +1,37 @@
+{
+  "name": "portfolio-1",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Personal portfolio",
+  "main": "app.js",
+  "scripts": {
+    "build:css": "tailwindcss -i ./public/css/styles.css -o ./public/css/output.css --minify",
+    "watch:css": "tailwindcss -i ./public/css/styles.css -o ./public/css/output.css --watch",
+    "start": "npm run build:css && node app.js",
+    "dev": "concurrently \"npm run watch:css\" \"nodemon app.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlosrrdev/portfolio-1.git"
+  },
+  "author": "Carlos Rodriguez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carlosrrdev/portfolio-1/issues"
+  },
+  "homepage": "https://github.com/carlosrrdev/portfolio-1#readme",
+  "dependencies": {
+    "autoprefixer": "^10.4.19",
+    "express": "^4.19.2",
+    "express-handlebars": "^7.1.3",
+    "htmx.org": "^2.0.1",
+    "postcss": "^8.4.40",
+    "pug": "^3.0.3",
+    "tailwindcss": "^3.4.7"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.4"
+  }
+}
