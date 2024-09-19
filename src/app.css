@@ -1,0 +1,13 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background-color: hsl(205, 10%, 10%);
+  color: hsl(205, 20%, 85%);
+}
